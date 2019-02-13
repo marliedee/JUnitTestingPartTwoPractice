@@ -50,7 +50,6 @@ public class NumberHelperUnitTest {
         int[] value = numberHelper.multiplesOfN(3, 10);
         Assert.assertArrayEquals(answer, value);
 
-
     }
 
     @Test
@@ -65,7 +64,7 @@ public class NumberHelperUnitTest {
         int answer = 6;
         int[] arr = new int[]{1, 2, 3};
         int value = numberHelper.arraySum(arr);
-        Assert.assertEquals(answer,value);
+        Assert.assertEquals(answer, value);
     }
 
     @Test
@@ -73,14 +72,15 @@ public class NumberHelperUnitTest {
         int answer = 6;
         int[] arr = new int[]{1, 2, 6, 3};
         int value = numberHelper.largestNumber(arr);
-        Assert.assertEquals(answer,value);
+        Assert.assertEquals(answer, value);
     }
 
     @Test
     public void check_numberSort() {
-        int[] arr = new int[]{1, 2, 6, 3};
+        int[] answer = new int[]{1, 2, 3, 6, 9};
+        int[] arr = new int[]{1, 2, 3, 9, 6};
         int[] value = numberHelper.numberSort(arr);
-        Assert.assertArrayEquals(arr, value);
+        Assert.assertArrayEquals(answer, value);
     }
 
 
