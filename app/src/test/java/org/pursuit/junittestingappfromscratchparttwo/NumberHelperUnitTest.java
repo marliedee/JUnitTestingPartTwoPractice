@@ -65,6 +65,7 @@ public class NumberHelperUnitTest {
         int answer = 6;
         int[] arr = new int[]{1, 2, 3};
         int value = numberHelper.arraySum(arr);
+        Assert.assertEquals(answer,value);
     }
 
     @Test
