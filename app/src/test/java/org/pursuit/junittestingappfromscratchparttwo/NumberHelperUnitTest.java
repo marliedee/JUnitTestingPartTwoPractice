@@ -72,6 +72,14 @@ public class NumberHelperUnitTest {
         int answer = 6;
         int[] arr = new int[]{1, 2, 6, 3};
         int value = numberHelper.largestNumber(arr);
+        Assert.assertEquals(answer,value);
+    }
+
+    @Test
+    public void check_numberSort() {
+        int[] arr = new int[]{1, 2, 6, 3};
+        int[] value = numberHelper.numberSort(arr);
+        Assert.assertArrayEquals(arr, value);
     }
 
 

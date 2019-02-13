@@ -1,5 +1,7 @@
 package org.pursuit.junittestingappfromscratchparttwo.helper;
 
+import java.util.Arrays;
+
 public class NumberHelper {
 
     private static NumberHelper instance;
@@ -64,12 +66,12 @@ public class NumberHelper {
         return maxValue;
     }
 
-//    public int[] numberSort(int[] numbers) {
-//
-//        Collections.sort(numbers);
-//
-//        return;
-//    }
+    public int[] numberSort(int[] numbers) {
+
+        Arrays.sort(numbers);
+
+        return numbers;
+    }
     }
 
 
